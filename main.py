@@ -1,8 +1,8 @@
-import random
+import random    #Lib
 
-choice = input("Enter your choice (rock, paper, scissors): ").lower()
+choice = input("Enter your choice (rock, paper, scissors): ").lower()   #Stores the input
 
-ia = random.choice(["rock", "paper", "scissors"])
+ai = random.choice(["rock", "paper", "scissors"])   #Makes a random choice as a bot
 
 if choice == ia:
     print(f"Both players selected {choice}. It's a tie!")
@@ -21,3 +21,5 @@ elif choice == "scissors":
         print("Scissors cuts paper! You win!")
     else:
         print("Rock smashes scissors! You lose.")
+else:
+    print("You CHEATER, you are wrong")
